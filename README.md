@@ -1,6 +1,6 @@
 libserial
     
-    Este módulo facilita algunas tareas con pyserial
+    Este módulo facilita algunas tareas con pyserial y provee conexion a ubidots consumiendo su API
 
     def action_read(value):#function to print value that receive from serial port
         print(value)
