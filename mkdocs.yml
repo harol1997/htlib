@@ -1,0 +1,6 @@
+site_name: htlib
+repo_url: https://github.com/harol1997/htlib
+repo_name: htlib
+nav:
+  - Home: index.md
+theme: readthedocs

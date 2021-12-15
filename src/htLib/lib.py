@@ -27,7 +27,8 @@ class BSerial(Serial):
         method to send some value to serial port. Add '\n' to endLine, you have to control it.
 
         Args:
-            value (anytype): this value will convert to string to send it to serial port
+            value (float): this value will convert to string to send it to serial port
+        
         """
         self.write((str(value)+'\n').encode())
 
@@ -38,6 +39,7 @@ class BSerial(Serial):
         you can change it set a new separator like argument in this method.
         Args:
             command (function): create in this "function" the actions to the value received
+            sepatator (str): define separation between values has been readed
         """
         self.separator = separator
         self.start_thread = True
