@@ -6,13 +6,11 @@
 Welcome to htlib's documentation!
 =================================
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
+Installation
+============
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+# pip install htlib
