@@ -13,4 +13,4 @@ Welcome to htlib's documentation!
 Installation
 ============
 
-# pip install htlib
+   pip install htlib
