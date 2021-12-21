@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>htLib package &mdash; htlib  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> htlib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">htLib package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-htLib.lib">htLib.lib module</a></li>
+<li><a class="reference internal" href="#module-htLib">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">htlib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>htLib package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/htLib.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="htlib-package">
+<h1>htLib package<a class="headerlink" href="#htlib-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-htLib.lib">
+<span id="htlib-lib-module"></span><h2>htLib.lib module<a class="headerlink" href="#module-htLib.lib" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="htLib.lib.BSerial">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">htLib.lib.</span></span><span class="sig-name descname"><span class="pre">BSerial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.BSerial" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">serial.serialwin32.Serial</span></code></p>
+<p>Class makes the connection, sends data and receives data from serial port.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Serial</strong> (<em>Serial</em>) – inherits from Serial class</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.BSerial.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.BSerial.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>constructor of Serial. see more information: init from Serial.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> (see in <a class="reference external" href="https://pyserial.readthedocs.io/en/latest/pyserial_api.html">https://pyserial.readthedocs.io/en/latest/pyserial_api.html</a>.) – like in init Serial in pyserial.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.BSerial.write_string_port">
+<span class="sig-name descname"><span class="pre">write_string_port</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.BSerial.write_string_port" title="Permalink to this definition"></a></dt>
+<dd><p>write string in serial port.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>type</em>) – send value to serial port. It will be converted to string, you have to control it.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.BSerial.start_read_string_port">
+<span class="sig-name descname"><span class="pre">start_read_string_port</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">command</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'-'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.BSerial.start_read_string_port" title="Permalink to this definition"></a></dt>
+<dd><p>initialize reading on serial port</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>command</strong> (<em>function</em>) – it will receive as parameter a value from serial port.
+if they are several values, you have to make sure that they are sent separated by a “-“.</p></li>
+<li><p><strong>separator</strong> (<em>str</em><em>, </em><em>optional</em>) – separator of values], defaults to “-”</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.BSerial.stop_read_string_port">
+<span class="sig-name descname"><span class="pre">stop_read_string_port</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.BSerial.stop_read_string_port" title="Permalink to this definition"></a></dt>
+<dd><p>method to stop receiving values</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="htLib.lib.Ubidot_Client">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">htLib.lib.</span></span><span class="sig-name descname"><span class="pre">Ubidot_Client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Ubidot_Client" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class offers connections to Ubidots platform.
+Now only can values to one device.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.Ubidot_Client.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Ubidot_Client.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>init</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>token</strong> (<em>str</em>) – toke of your ubidots account</p></li>
+<li><p><strong>device</strong> (<em>str</em>) – name of your ubidots device</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.Ubidot_Client.send_value">
+<span class="sig-name descname"><span class="pre">send_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variable_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inthread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Ubidot_Client.send_value" title="Permalink to this definition"></a></dt>
+<dd><p>Send a value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>variable_label</strong> (<em>str</em>) – name of variable label in your ubidots device</p></li>
+<li><p><strong>inthread</strong> (<em>bool</em><em>, </em><em>optional</em>) – execute it in a thread, defaults to True</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.Ubidot_Client.send_values">
+<span class="sig-name descname"><span class="pre">send_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variable_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inthread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Ubidot_Client.send_values" title="Permalink to this definition"></a></dt>
+<dd><p>send many values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>variable_label</strong> (<em>str</em>) – name of variable label in your ubidots device</p></li>
+<li><p><strong>inthread</strong> (<em>bool</em><em>, </em><em>optional</em>) – execute it in a thread, defaults to True</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – all Elements in data must be a dictionary, pass of this way: value=27, value=24</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.Ubidot_Client.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Ubidot_Client.close" title="Permalink to this definition"></a></dt>
+<dd><p>Close serial port connection</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="htLib.lib.Email">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">htLib.lib.</span></span><span class="sig-name descname"><span class="pre">Email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Email" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class offers method to send a email of a easy mode</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.Email.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Email.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>init</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>email</strong> (<em>str</em>) – user email.</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – user password.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="htLib.lib.Email.send_email">
+<span class="sig-name descname"><span class="pre">send_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'email</span> <span class="pre">from</span> <span class="pre">python'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'smtp.live.com'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">587</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#htLib.lib.Email.send_email" title="Permalink to this definition"></a></dt>
+<dd><p>Send a email. defaults It works with gmail</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dest</strong> (<em>str</em>) – Destination email.</p></li>
+<li><p><strong>message</strong> (<em>str</em><em>, </em><em>optional</em>) – messsage to send, defaults to “email from python”</p></li>
+<li><p><strong>server</strong> (<em>str</em><em>, </em><em>optional</em>) – server email, defaults to “smtp.live.com”</p></li>
+<li><p><strong>port</strong> (<em>int</em><em>, </em><em>optional</em>) – port email, defaults to 587</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-htLib">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-htLib" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Harol Alvarado.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
