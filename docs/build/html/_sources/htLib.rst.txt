@@ -7,9 +7,9 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
-   htLib.bserial
-   htLib.mail
-   htLib.ubidots
+   htLib/bserial
+   htLib/mail
+   htLib/ubidots
 
 Module contents
 ---------------
