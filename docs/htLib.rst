@@ -4,29 +4,12 @@ htLib package
 Submodules
 ----------
 
-htLib.bserial module
---------------------
+.. toctree::
+   :maxdepth: 4
 
-.. automodule:: htLib.bserial
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-htLib.mail module
------------------
-
-.. automodule:: htLib.mail
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-htLib.ubidots module
---------------------
-
-.. automodule:: htLib.ubidots
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   htLib.bserial
+   htLib.mail
+   htLib.ubidots
 
 Module contents
 ---------------
