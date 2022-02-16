@@ -4,13 +4,12 @@ htLib package
 Submodules
 ----------
 
-htLib.lib module
-----------------
+.. toctree::
+   :maxdepth: 4
 
-.. automodule:: htLib.lib
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   htLib.bserial
+   htLib.mail
+   htLib.ubidots
 
 Module contents
 ---------------
