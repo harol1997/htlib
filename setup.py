@@ -2,9 +2,9 @@ import setuptools
 
 setuptools.setup(
     name="htlib",
-    version="0.13",
-    author="Harol Alvarado",
-    author_email="harolav3@gmail.com",
+    version="0.14",
+    author="Harol Alvarado, Hedrich Apaza",
+    author_email="harolav3@gmail.com, Vlandemir2411@hotmail.com",
     description="htlib package",
     url="https://github.com/harol1997/htlib",
     classifiers=[
@@ -18,5 +18,5 @@ setuptools.setup(
         "pyserial==3.5",
         "requests==2.26.0"
     ],
-    long_description="documentation >> https://htlib.readthedocs.io/en/latest/"
+    long_description="documentation >> https://htlib.readthedocs.io/en/latest/\ngithub >> https://github.com/harol1997/htlib"
 )
