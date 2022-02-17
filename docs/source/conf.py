@@ -22,7 +22,7 @@ copyright = '2022, Harol Alvarado'
 author = 'Harol Alvarado'
 
 # The full version, including alpha/beta/rc tags
-release = '1.1'
+release = '3'
 
 
 # -- General configuration ---------------------------------------------------
