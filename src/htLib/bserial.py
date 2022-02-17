@@ -47,8 +47,8 @@ class BSerial(Serial):
         """
         get value received after to call start_read_string_port
         
-        :return:If there are data in port return a list with values received. If not return None
-        :rtype: 
+        :return: If there are data in port return a list with values received. If not return None
+        :rtype: list or None
         """
         return self.__value_received
 
