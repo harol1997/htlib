@@ -27,17 +27,16 @@ class BSerial(Serial):
 
     @property
     def terminator(self)->str:
-        """get terminator value"""
+        """It works with write_string_port
+
+        :getter: Return terminator
+        :setter: Sets terminator
+        :type: str
+        """
         return self.__terminator
 
     @terminator.setter
     def terminator(self, terminator):
-        """set terminator value
-        
-        :param terminator: It works with you need to send value
-        :type terminator: string. length of string must be 1
-        :raises TypeError
-        """
         if len(terminator) == 1 and terminator.isascii() and not terminator.isdigit():
             self.__terminator = terminator
         else:
@@ -48,23 +47,24 @@ class BSerial(Serial):
         """
         get value received after to call start_read_string_port
         
-        @return:If there are data in port return a list with values received. If not return None
-        @rtype: 
+        :return:If there are data in port return a list with values received. If not return None
+        :rtype: 
         """
         return self.__value_received
 
     @property
     def separator(self)->str:
-        """get separator value"""
+        """It works with start_read_string_port
+        
+        :getter: Returns separator
+        :setter: Sets separator
+        :type: str
+        """
         return self.__separator
 
     @separator.setter
     def separator(self, separator:str):
-        """set sepatator value
-        :param separator: It works with you need to received values
-        :type separator: string. Length of string must be 1
-        :raises TypeError
-        """
+        
         if len(separator) == 1 and separator.isascii() and not separator.digit():
             self.__separator = separator
         else:

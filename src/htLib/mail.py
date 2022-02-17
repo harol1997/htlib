@@ -5,7 +5,7 @@ from smtplib import SMTP
 class Email:
     """This class offers method to send a email of a easy mode"""
     def __init__(self,email,password):
-        """init
+        """
 
         :param email: user email.
         :type email: str
@@ -16,8 +16,9 @@ class Email:
         self.__email = email
         self.__password = password
 
+
     def send_email(self,dest,message="email from python",server="smtp.live.com",port=587, block=False):
-        """Send a email. defaults It works with gmail 
+        """Send a email. defaults It works with gmail
 
         :param dest: Destination email.
         :type dest: str
@@ -27,8 +28,8 @@ class Email:
         :type server: str, optional
         :param port: port email, defaults to 587
         :type port: int, optional
-        :param block:if it's True execute in Thread
-        :param block, bool, optional
+        :param block: if it's True execute in Thread
+        :type block: bool, optional
         """
         if not block:
             t = Thread(target=self.__thread_send_email,args=(dest,message,server,port))
