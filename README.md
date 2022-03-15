@@ -1,4 +1,4 @@
-libserial
+htLib
     
     Este módulo facilita algunas tareas con pyserial y provee conexion a ubidots consumiendo su API
 
